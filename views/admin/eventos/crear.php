@@ -3,7 +3,7 @@
 <div class="dashboard__contenedor-boton">
     <a class="dashboard__boton" href="/admin/eventos">
         <i class="fa-solid fa-circle-arrow-left"></i>
-        Volver
+        Retour à
     </a>
 </div>
 
@@ -15,6 +15,6 @@
     <form method="POST" action="/admin/eventos/crear" class="formulario">
         <?php include_once __DIR__ . '/formulario.php'; ?>
 
-        <input class="formulario__submit formulario__submit--registrar" type="submit" value="Registrar Evento">
+        <input class="formulario__submit formulario__submit--registrar" type="submit" value="S'inscrire à un événement">
     </form>
 </div>

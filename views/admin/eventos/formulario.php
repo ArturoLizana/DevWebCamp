@@ -1,37 +1,37 @@
 <fieldset class="formulario__fieldset">
-    <legend class="formulario__legend">Información Evento</legend>
+    <legend class="formulario__legend">Informations sur l'événement</legend>
 
     <div class="formulario__campo">
-        <label for="nombre" class="formulario__label">Nombre Evento</label>
+        <label for="nombre" class="formulario__label">Nom Événement</label>
         <input
             type="text"
             class="formulario__input"
             id="nombre"
             name="nombre"
-            placeholder="Nombre Evento"
+            placeholder="Nom Événement"
             value="<?php echo $evento->nombre; ?>"
         >
     </div>
 
     <div class="formulario__campo">
-        <label for="descripcion" class="formulario__label">Descripción</label>
+        <label for="descripcion" class="formulario__label">Description</label>
         <textarea
             class="formulario__input"
             id="descripcion"
             name="descripcion"
-            placeholder="Descripción Evento"
+            placeholder="Description de l'événement"
             rows="8"
         ><?php echo $evento->descripcion; ?></textarea>
     </div>
 
     <div class="formulario__campo">
-        <label for="categoria" class="formulario__label">Categoría o Tipo de Evento</label>
+        <label for="categoria" class="formulario__label">Catégorie ou type d'événement</label>
         <select
             class="formulario__select"
             id="categoria"
             name="categoria_id"
         >
-            <option value="">- Seleccionar -</option>
+            <option value="">- Sélectionner -</option>
             <?php foreach($categorias as $categoria) { ?>
                 <option <?php echo ($evento->categoria_id === $categoria->id) ? 'selected' : '' ?> value="<?php echo $categoria->id; ?>"><?php echo $categoria->nombre; ?></option>
             <?php } ?>
@@ -39,7 +39,7 @@
     </div>    
 
     <div class="formulario__campo">
-        <label for="categoria" class="formulario__label">Selecciona el día</label>
+        <label for="categoria" class="formulario__label">Sélectionner le jour</label>
 
         <div class="formulario__radio">
             <?php foreach($dias as $dia) { ?>
@@ -60,7 +60,7 @@
     </div>
 
     <div id="horas" class="formulario__campo">
-        <label class="formulario__label">Seleccionar Hora</label>
+        <label class="formulario__label">Sélectionner l'heure</label>
 
         <ul id="horas" class="horas">
             <?php foreach($horas as $hora) { ?>
@@ -74,15 +74,15 @@
 
 
 <fieldset class="formulario__fieldset">
-    <legend class="formulario__legend">Información Extra</legend>
+    <legend class="formulario__legend">Informations supplémentaires</legend>
 
     <div class="formulario__campo">
-        <label for="ponentes" class="formulario__label">Ponente</label>
+        <label for="ponentes" class="formulario__label">Orateur</label>
         <input
             type="text"
             class="formulario__input"
             id="ponentes"
-            placeholder="Buscar Ponente"
+            placeholder="Recherche d'un orateur"
         >
         <ul id="listado-ponentes" class="listado-ponentes"></ul>
 
@@ -90,7 +90,7 @@
     </div>
 
     <div class="formulario__campo">
-        <label for="disponibles" class="formulario__label">Lugares Disponibles</label>
+        <label for="disponibles" class="formulario__label">Places disponibles</label>
         <input
             type="number"
             min="1"

@@ -19,7 +19,7 @@
                 >
             </div>
 
-            <input type="submit" class="formulario__submit" value="Guardar Password">
+            <input type="submit" class="formulario__submit" value="Enregistrer le mot de passe">
         </form>
     <?php } ?>
 

@@ -3,7 +3,7 @@
 <div class="dashboard__contenedor-boton">
     <a class="dashboard__boton" href="/admin/eventos/crear">
         <i class="fa-solid fa-circle-plus"></i>
-        Añadir Evento
+        Ajouter un événement
     </a>
 </div>
 
@@ -13,10 +13,10 @@
         <table class="table">
             <thead class="table__thead">
                 <tr>
-                    <th scope="col" class="table__th">Evento</th>
-                    <th scope="col" class="table__th">Categoría</th>
-                    <th scope="col" class="table__th">Día y Hora</th>
-                    <th scope="col" class="table__th">Ponente</th>
+                    <th scope="col" class="table__th">Événement</th>
+                    <th scope="col" class="table__th">Catégorie</th>
+                    <th scope="col" class="table__th">Jour et heure</th>
+                    <th scope="col" class="table__th">Orateur</th>
                     <th scope="col" class="table__th"></th>
                 </tr>
             </thead>
@@ -39,14 +39,14 @@
                         <td class="table__td--acciones">
                             <a class="table__accion table__accion--editar" href="/admin/eventos/editar?id=<?php echo $evento->id; ?>">
                                 <i class="fa-solid fa-pencil"></i>
-                                Editar
+                                Editer
                             </a>
 
                             <form method="POST" action="/admin/eventos/eliminar" class="table__formulario">
                                 <input type="hidden" name="id" value="<?php echo $evento->id; ?>">
                                 <button class="table__accion table__accion--eliminar" type="submit">
                                     <i class="fa-solid fa-circle-xmark"></i>
-                                    Eliminar
+                                    Supprimer
                                 </button>
                             </form>
                         </td>
@@ -55,7 +55,7 @@
             </tbody>
         </table>
     <?php } else { ?>
-        <p class="text-center">No Hay Eventos Aún</p>
+        <p class="text-center">Aucun événement pour l'instant</p>
     <?php } ?>
 </div>
 

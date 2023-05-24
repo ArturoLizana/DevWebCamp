@@ -1,55 +1,55 @@
 <fieldset class="formulario__fieldset">
-    <legend class="formulario__legend">Información Personal</legend>
+    <legend class="formulario__legend">Informations Personnelles</legend>
 
     <div class="formulario__campo">
-        <label for="nombre" class="formulario__label">Nombre</label>
+        <label for="nombre" class="formulario__label">Nom</label>
         <input
             type="text"
             class="formulario__input"
             id="nombre"
             name="nombre"
-            placeholder="Nombre Ponente"
+            placeholder="Nom Orateur"
             value="<?php echo $ponente->nombre ?? ''; ?>"
         >
     </div>
 
     <div class="formulario__campo">
-        <label for="apellido" class="formulario__label">Apellido</label>
+        <label for="apellido" class="formulario__label">Nom de famille</label>
         <input
             type="text"
             class="formulario__input"
             id="apellido"
             name="apellido"
-            placeholder="Apellido Ponente"
+            placeholder="Nom de famille Orateur"
             value="<?php echo $ponente->apellido ?? ''; ?>"
         >
     </div>
 
     <div class="formulario__campo">
-        <label for="ciudad" class="formulario__label">Ciudad</label>
+        <label for="ciudad" class="formulario__label">Ville</label>
         <input
             type="text"
             class="formulario__input"
             id="ciudad"
             name="ciudad"
-            placeholder="Ciudad Ponente"
+            placeholder="Ville Orateur"
             value="<?php echo $ponente->ciudad ?? ''; ?>"
         >
     </div>
 
     <div class="formulario__campo">
-        <label for="pais" class="formulario__label">País</label>
+        <label for="pais" class="formulario__label">Pays</label>
         <input
             type="text"
             class="formulario__input"
             id="pais"
             name="pais"
-            placeholder="País Ponente"
+            placeholder="Pays Orateur"
             value="<?php echo $ponente->pais ?? ''; ?>"
         >
     </div>
     <div class="formulario__campo">
-        <label for="imagen" class="formulario__label">Imagen</label>
+        <label for="imagen" class="formulario__label">Image</label>
         <input
             type="file"
             class="formulario__input formulario__input--file"
@@ -59,7 +59,7 @@
     </div>
 
     <?php if(isset($ponente->imagen_actual)) { ?>
-        <p class="formulario__texto">Imagen Actual:</p>
+        <p class="formulario__texto">Image Actuelle:</p>
         <div class="formulario__imagen">
             <picture>
                 <source srcset="<?php echo $_ENV['HOST'] . '/img/speakers/' . $ponente->imagen; ?>.webp" type="image/webp">
@@ -73,10 +73,10 @@
 
 
 <fieldset class="formulario__fieldset">
-    <legend class="formulario__legend">Información Extra</legend>
+    <legend class="formulario__legend">Informations Supplémentaires</legend>
 
     <div class="formulario__campo">
-        <label for="tags_input" class="formulario__label">Áreas de Experiencia (separadas por coma)</label>
+        <label for="tags_input" class="formulario__label">Domaines d'expertise (séparés par une virgule)</label>
         <input
             type="text"
             class="formulario__input"
@@ -90,7 +90,7 @@
 </fieldset>
 
 <fieldset class="formulario__fieldset">
-    <legend class="formulario__legend">Redes Sociales</legend>
+    <legend class="formulario__legend">Réseaux sociaux</legend>
 
     <div class="formulario__campo">
         <div class="formulario__contenedor-icono">

@@ -18,7 +18,7 @@
             >
         </div>
 
-        <input type="submit" class="formulario__submit" value="Enviar Instrucciones">
+        <input type="submit" class="formulario__submit" value="Envoyer les instructions">
     </form>
 
     <div class="acciones">

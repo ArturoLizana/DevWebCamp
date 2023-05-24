@@ -131,6 +131,6 @@
     </div>
 
     <div class="boleto__enlace-contenedor">
-        <a href="/paquetes" class="boleto__enlace">Ver Paquetes</a>
+        <a href="/paquetes" class="boleto__enlace">Voir les packages</a>
     </div>
 </section>
